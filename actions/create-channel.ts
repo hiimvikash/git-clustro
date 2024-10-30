@@ -4,7 +4,7 @@ import * as z from "zod";
 import { createChannelSchema } from "@/zod-schemas";
 
 import { currentProfile } from "@/lib/current-profile";
-import { v4 as uuidv4 } from "uuid";
+
 import db from "@/lib/db";
 import { MemberRole } from "@prisma/client";
 

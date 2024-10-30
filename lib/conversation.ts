@@ -30,7 +30,7 @@ const findConversation = async (memberOneId: string, memberTwoId: string) => {
         },
       },
     });
-  } catch (error) {
+  } catch {
     return null;
   }
 };

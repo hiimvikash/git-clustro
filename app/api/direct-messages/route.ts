@@ -1,5 +1,5 @@
 import { currentProfile } from "@/lib/current-profile";
-import { DirectMessage, Message } from "@prisma/client";
+import { DirectMessage } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 import db from "@/lib/db"
 
