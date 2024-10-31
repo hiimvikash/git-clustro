@@ -8,7 +8,7 @@ import {
 } from "react"
 
 import {io as ClientIO} from "socket.io-client";
-import { validate } from "uuid";
+
 
 type SocketContextType = {
     socket : any | null;

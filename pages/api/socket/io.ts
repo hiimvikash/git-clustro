@@ -18,7 +18,7 @@ const ioHandler = (req: NextApiRequest, res: NextApiResponseServerIo) => {
         path: path,
         addTrailingSlash: false,
         cors: {
-          origin: ["http://localhost:3000", "https://clustro.online"],
+          origin: true,
           methods: ["GET", "POST"],
           credentials: true, // Include credentials if needed
         },
