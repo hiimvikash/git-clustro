@@ -17,6 +17,11 @@ const ioHandler = (req: NextApiRequest, res: NextApiResponseServerIo) => {
       const io = new ServerIO(httpServer, {
         path: path,
         addTrailingSlash: false,
+        cors: {
+          origin: ["http://localhost:3000", "https://clustro.online"],
+          methods: ["GET", "POST"],
+          credentials: true, // Include credentials if needed
+        },
       });
 
       res.socket.server.io = io;
